@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row justify-content-md-center mb-4">
+        <h2 class='text-primary'>Predict Titanic Survival</h2>
+    </div>
+
+<!-- Starts form section -->
+    <div class="form-container ">
+        <form class="form-horizontal" action = "/predict/" method="post">
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="is_Mr">Title Mister:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="is_Mr" name="is_Mr">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="is_Master">Title Master:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="is_Master" name="is_Master">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="is_Mrs">Title Mrs:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="is_Mrs" name="is_Mrs">
+              </div>
+            </div>
+
+             <div class="form-group row">
+              <label class="control-label col-sm-2" for="is_Miss">Title Miss:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="is_Miss" name="is_Miss">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="is_Pclass_1">Passenger Class 1:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="is_Pclass_1" name="is_Pclass_1">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="is_Pclass_2">Passenger Class 2:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="is_Pclass_2" name="is_Pclass_2">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="is_embark_S">Embark at S:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="is_embark_S" name="is_embark_S">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="is_embark_C">Embark at C:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="is_embark_C" name="is_embark_C">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="is_parent_or_child">Parent or child:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="is_parent_or_child" name="is_parent_or_child">
+              </div>
+            </div>
+            <div class="form-group row">
+            <label class="control-label col-sm-2" for="">&nbsp;</label>
+              <div class="col-sm-offset-2 col-sm-4">
+                <button type="submit" class="btn btn-primary">Predict</button>
+              </div>
+            </div>
+          </form>
+        <!-- Ends form section -->
+</div>
+{% endblock %}
