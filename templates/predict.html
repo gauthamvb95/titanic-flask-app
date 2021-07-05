@@ -1,0 +1,50 @@
+<html>
+
+ <style>
+ h1 {
+  width:100%: 
+  float: center;
+  display: block;
+  background-color: #333;
+  color: #f2f2f2;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px; 
+  height:100px;
+}
+
+img {
+   background-color: #ddd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  
+}
+progress {
+ background-color: #ddd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  }
+
+progress {
+  text-align: center;
+}
+progress:after {
+  content: {{test}};
+}  
+ 
+ </style>
+
+ <body>
+ 	 {% if prediction ==  1 %}
+		 
+	     <h1> PERSON SURVIVED!   </h1>
+
+	  {% else %}
+		<h1> PERSON IS DEAD :(   </h1>
+	{% endif %}
+ </body>
+ </html>
